@@ -28,7 +28,7 @@ input, button, textarea {
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* COLORS */
-    --BGCOLOR: orange;
+    --BGCOLOR: rgb(41, 190, 133);
     --BGCOLOR-FADE: rgb(252, 220, 160);
     --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
     --BODY-BGCOLOR: #FFF;
@@ -146,6 +146,8 @@ a:active {
     justify-content: space-evenly;
     gap: 1rem;
 }
+
+/* || HERO */
 
 
 
