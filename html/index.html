@@ -43,101 +43,68 @@
       </figure>
     </section>
 
-    <hr />
+    <main class="main">
+      <article id="menu" class="main__article menu">
+        <h2 class="menu__h2">Our Menu</h2>
+        <table class="menu__container">
+          <caption class="offscreen">
+            Our Tacos
+          </caption>
+          <thead>
+            <tr>
+              <th class="menu__header" scope="col">Tacos</th>
+              <th class="menu__header" scope="col">Quantity</th>
+              <th class="menu__header" scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="menu__item menu_cr" scope="row" rowspan="3">
+                Crunchy
+              </th>
+              <td class="menu__item">1</td>
+              <td class="menu__item">$1.50</td>
+            </tr>
+            <tr>
+              <td class="menu__item">2</td>
+              <td class="menu__item">$2.50</td>
+            </tr>
+            <tr>
+              <td class="menu__item">3</td>
+              <td class="menu__item">$4.50</td>
+            </tr>
+            <tr>
+              <th class="menu__item menu__sf" scope="row" rowspan="3">Soft</th>
+              <td class="menu__item">1</td>
+              <td class="menu__item">$2.00</td>
+            </tr>
+            <tr>
+              <td class="menu__item">2</td>
+              <td class="menu__item">$2.50</td>
+            </tr>
+            <tr>
+              <td class="menu__item">3</td>
+              <td class="menu__item">$4.50</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td class="menu__item menu__cs" colspan="3">Chips & Salsa $2</td>
+            </tr>
+          </tfoot>
+        </table>
 
-    <main>
-      <article id="about">
-        <section>
-          <h2>About <abbr title="The Little Taco Shop">LTS</abbr></h2>
-          <p>
-            <abbr title="Little Taco Shop">LTS</abbr> was founded in
-            <time datetime="2022">2022</time>. Our shop was built from a
-            <strong>love of tacos</strong> 🌮🌮🌮. We hope our shop adds a
-            unique interesting place to our little town.
-          </p>
-        </section>
-
-        <section>
-          <h3>Taco Trivia</h3>
-          <aside>
-            <details>
-              <summary>
-                When did tacos first appear in the United States?
-              </summary>
-              <p>
-                The Taco was first introduced to the United States in 1905.
-                Mexican migrants were coming in to work on railroads and other
-                jobs and started to bring their delicious food with them. Tacos
-                were essentially a street food at this time since they were
-                highly portable and cheap.
-              </p>
-            </details>
-          </aside>
-        </section>
-      </article>
-
-      <hr />
-
-      <article id="menu">
-        <section>
-          <h2>Our Menu</h2>
-          <table>
-            <caption>
-              Our Tacos
-            </caption>
-            <thead>
-              <tr>
-                <th scope="col">Tacos</th>
-                <th scope="col"><abbr title="Quantity">Qty</abbr></th>
-                <th scope="col">Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" rowspan="3">Crunchy</th>
-                <td>1</td>
-                <td>$1.50</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>$2.50</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>$4.50</td>
-              </tr>
-              <tr>
-                <th scope="row" rowspan="3">Soft</th>
-                <td>1</td>
-                <td>$2.00</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>$2.50</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>$4.50</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td colspan="3">Chips & Salsa $2</td>
-              </tr>
-            </tfoot>
-          </table>
-        </section>
-
-        <footer>
-          <p><a href="#">Back to Top</a></p>
-        </footer>
+        <p class="center">
+          <a href="#">Back To Top</a>
+        </p>
       </article>
     </main>
 
-    <hr />
-
-    <footer>
-      <p>Copyright &copy; The Little Taco Shop</p>
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy;</span>
+        <span class="nowrap">Little Taco Shop</span>
+      </p>
     </footer>
   </body>
 </html>
