@@ -342,10 +342,6 @@ thead th:first-child {
     border-top-left-radius: var(--BORDER-RADIUS);
 }
 
-thead th:first-child {
-    border-top-right-radius: var(--BORDER-RADIUS);
-}
-
 thead th:last-child {
     border-top-right-radius: var(--BORDER-RADIUS);
 }
