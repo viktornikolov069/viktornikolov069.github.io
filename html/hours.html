@@ -3,22 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LTS Contact Page</title>
+    <title>KC Contact Page</title>
     <meta name="author" content="Viktor Nikolov" />
-    <meta name="description" content="Store Hours for The Little Taco Shop." />
-    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <meta name="description" content="Working Hours for Kitten Cuteness." />
+    <link rel="icon" href="../cat-icon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <script src="../js/main.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <h1 class="header__h1">Little Taco Shop</h1>
+      <h1 class="header__h1">Kitten Cuteness</h1>
 
       <nav class="header__nav">
         <ul class="header__ul">
           <li><a href="/html/">Home</a></li>
 
           <li><a href="/html/#menu">Menu</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li>
             <a href="about.html">About</a>
           </li>
@@ -29,18 +30,19 @@
     <section class="hero">
       <figure>
         <img
-          src="../img/tacos_tray_1000x667.png"
-          alt="A Tray Of Tasty Tacos"
-          title="A Tray Of Tasty Tacos"
+          src="../img/cat-clock_1000x667.png"
+          alt="A Cat With a Clock"
+          title="A Cat With a Clock"
           width="1000"
           height="667"
         />
-        <figcaption class="offscreen">A Tray Of Tasty Tacos</figcaption>
+        <figcaption class="offscreen">Look at That Cat With a Clock</figcaption>
       </figure>
     </section>
 
     <main class="main">
       <article id="schedule" class="main__article">
+        <h2>Hours</h2>
         <p>We are open 7 days a week!</p>
         <dl>
           <dt>Sunday-Thursday</dt>
@@ -54,15 +56,13 @@
             >
           </dd>
         </dl>
-
-        <p><a href="#">Back to Top</a></p>
       </article>
     </main>
 
     <footer class="footer">
       <p>
-        <span class="nowrap">Copyright &copy;</span>
-        <span class="nowrap">Little Taco Shop</span>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">Kitten Cuteness</span>
       </p>
     </footer>
   </body>

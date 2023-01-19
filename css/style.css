@@ -24,28 +24,31 @@ input, button, textarea {
 :root {
     /* FONTS */
     --FF: "Nunito", sans-serif;
-    --FF-HEADING: "Fugaz One", cursive;
+    --FF-HEADINGS: "Fugaz One", cursive;
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* COLORS */
-    --BGCOLOR: rgb(41, 190, 133);
     --BGCOLOR-FADE: rgb(252, 220, 160);
+    --BGCOLOR: rgb(93, 43, 151);/*rgb(190, 41, 133);*/
     --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
     --BODY-BGCOLOR: #FFF;
+    --BORDER-COLOR: rgb(35, 30, 30);
+    --BUTTON-COLOR: whitesmoke;
+    --BUTTON_BGCOLOR: hsla(0, 17%, 15%, 0.766);
     --FONT-COLOR: #000;
-    --BORDER-COLOR: #333;
-    --HIGHLIGHT-COLOR: rgb(51, 178, 51);
-    --LINK-COLOR: #000;
-    --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
-    --LINK-ACTIVE: orange;
     --HEADER-BGCOLOR: #000;
     --HEADER-COLOR: #FFF;
-    --NAV-BGCOLOR: #FFF;
-    --HERO-BGCOLOR: rgba(236, 101, 11, 0.753);
+    --HERO-BGCOLOR: rgba(93, 43, 151, 0.753);
     --HERO-COLOR: #FFF;
+    --HIGHLIGHT-COLOR: rgb(24, 22, 23);
+    --LINK-ACTIVE: orange;
+    --LINK-COLOR: #000;
+    --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
+    --NAV-BGCOLOR: #FFF;
 
     /* BORDERS: */
     --BORDERS: 1px solid var(--BORDER-COLOR);
+    --BORDER-RADIUS: 15px;
 
     /* STANDARD PADDING */
     --PADDING-TB: 0.25em;
@@ -53,15 +56,30 @@ input, button, textarea {
 
     /* STANDARD MARGIN */
     --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
+}
 
-
-
+@media (prefers-color-scheme: dark) {
+    :root { 
+        --BGCOLOR-FADE: gray;
+        --BGCOLOR: #000;
+        --BODY-BGCOLOR: #333;
+        --BORDER-COLOR: whitesmoke;
+        --BUTTON-COLOR: #000;
+        --FONT-COLOR: whitesmoke;
+        --HEADER-COLOR: whitesmoke;
+        --HERO-COLOR: #333;
+        --HIGHLIGHT-COLOR: whitesmoke;
+        --LINK-ACTIVE: rgb(252, 200, 103);
+        --LINK-COLOR: whitesmoke;
+        --LINK-HOVER: orange;
+        --NAV-BGCOLOR: rgb(20, 20, 20);
+    }
 }
 
 /* || UTILITY CLASSES */
 .offscreen {
     position: absolute;
-    left: -100000px;
+    left: -10000px;
 }
 
 .nowrap {
@@ -94,7 +112,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: var(--FF-HEADING);
+    font-family: var(--FF-HEADINGS);
     letter-spacing: 0.1em;
 }
 
@@ -203,13 +221,14 @@ a:active {
 
 .main__article {
     scroll-margin-top: 6.5rem;
+    margin: var(--MARGIN);
 }
 
 .main__article:first-child {
     margin-top: 1em;
 }
 
-.main_article:last-child {
+.main__article:last-child {
     margin-top: 1em;
     min-height: calc(100vh - 20rem);
 }
@@ -246,7 +265,7 @@ a:active {
 .contact__input,
 .contact__textarea {
     padding: 0.5em;
-    border-radius: 15px;
+    border-radius: var(--BORDER-RADIUS);
     border-width: 2px;
     width: 100%;
 }
@@ -254,10 +273,105 @@ a:active {
 .contact__button {
     margin-bottom: 1em;
     padding: 0.5em;
-    border-radius: 15px;
-    background-color: var(--HIGHLIGHT-COLOR);
-    color: var(--HEADER-COLOR)
+    border-radius: var(--BORDER-RADIUS);
+    background-color: var(--BUTTON_BGCOLOR);
+    color: var(--BUTTON-COLOR);
+    font-weight: bold;
 }
+
+/* || MENU */
+
+thead, tbody, tfoot, tr {
+    display: contents;
+
+}
+
+.menu__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "hd1 hd2 hd3" 
+        "cr cr1 cr1p" 
+        "cr cr2 cr2p" 
+        "cr cr3 cr3p"
+        "sf sf1 sf1p"
+        "sf sf2 sf2p"
+        "sf sf3 sf3p"
+        "cs cs cs";
+    gap: 0.1em;
+    margin-bottom: 1em;
+}
+
+.menu__cr {
+    grid-area: cr;
+}
+
+.menu__sf {
+    grid-area: sf;
+}
+
+.menu__cs {
+    grid-area: cs;
+    
+}
+
+.menu__cr, 
+.menu__sf, 
+.menu__cs, 
+.menu__header {
+    color: var(--HIGHLIGHT-COLOR);
+    font-weight: bold;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.menu__header, 
+.menu__item {
+    width: 100%;
+    padding: 1em;
+    border: medium ridge var(--BORDER-COLOR);
+}
+
+.menu__item {
+    display: grid;
+    place-content: center;
+}
+
+thead th:first-child {
+    border-top-left-radius: var(--BORDER-RADIUS);
+}
+
+thead th:first-child {
+    border-top-right-radius: var(--BORDER-RADIUS);
+}
+
+thead th:last-child {
+    border-top-right-radius: var(--BORDER-RADIUS);
+}
+
+tfoot td {
+    border-bottom-left-radius: var(--BORDER-RADIUS);
+    border-bottom-right-radius: var(--BORDER-RADIUS);
+}
+
+@media screen and (min-width: 576px) {
+    .header__h1::before {
+        content: '😺 ';
+    }
+    .header__h1::after {
+        content: ' 😺';
+    }
+
+    .menu__header,
+    .menu__cr,
+    .menu__sf,
+    .menu__cs {
+        font-size: 125%;
+    }
+}
+    
+
 
 
 

@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LTS Contact Page</title>
+    <title>KC Contact Page</title>
     <meta name="author" content="Viktor Nikolov" />
     <meta
       name="description"
-      content="Contact information for The Little Taco Shop"
+      content="Contact information for Kitten Cuteness"
     />
-    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../cat-icon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <script src="../js/main.js" defer></script>
   </head>
 
   <body>
     <header class="header">
-      <h1 class="header__h1">Little Taco Shop</h1>
+      <h1 class="header__h1">Kitten Cuteness</h1>
 
       <nav class="header__nav">
         <ul class="header__ul">
@@ -23,7 +24,7 @@
           <li><a href="/html/#menu">Menu</a></li>
           <li><a href="hours.html">Hours</a></li>
           <li>
-            <a href="/html/#about">About</a>
+            <a href="about.html">About</a>
           </li>
         </ul>
       </nav>
@@ -32,13 +33,13 @@
     <section class="hero">
       <figure class>
         <img
-          src="../img/tacos_close_up_1000x649.png"
-          alt="Little Taco Shop Tacos"
-          title="Little Taco Shop Tacos"
+          src="../img/cat_looking_at_phone_1000x649.png"
+          alt="Cat Looking at Phone"
+          title="Cat Looking at Phone"
           width="1000"
           height="649"
         />
-        <figcaption class="offscreen">Little Taco Shop Tacos</figcaption>
+        <figcaption class="offscreen">Cat Looking at Phone</figcaption>
       </figure>
     </section>
 
@@ -46,10 +47,12 @@
       <article id="location" class="main__article contact">
         <h2 class="contact__h2">Our Location</h2>
         <address>
-          555 Taco Temptation Lane, Suite T Kansas City, MO 55555-5555
+          666 Kitten Street, San Francisco, MO 66666-6666
           <p>Phone: <a href="tel:+359988888888">0988888888</a></p>
         </address>
       </article>
+
+      <hr />
 
       <article id="contactForm" class="main__article">
         <h2>Our Contact Form</h2>
@@ -116,8 +119,8 @@
 
     <footer class="footer">
       <p>
-        <span class="nowrap">Copyright &copy;</span>
-        <span class="nowrap">Little Taco Shop</span>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">Kitten Cuteness</span>
       </p>
       <!-- <p><a href="#">Back to Top</a></p> -->
     </footer>

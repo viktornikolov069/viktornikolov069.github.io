@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Little Taco Shop</title>
+    <title>Kitten Cuteness</title>
     <meta name="author" content="Viktor Nikolov" />
     <meta
       name="description"
-      content="The official website for The Little Taco Shop"
+      content="The official website for Kitten Cuteness"
     />
-    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../cat-icon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <script src="../js/main.js" defer></script>
   </head>
 
   <body>
     <header class="header">
-      <h1 class="header__h1">Little Taco Shop</h1>
+      <h1 class="header__h1">Kitten Cuteness</h1>
 
       <nav class="header__nav">
         <ul class="header__ul">
@@ -30,66 +31,68 @@
     </header>
 
     <section class="hero">
-      <h2 class="hero__h2">Bienvenidos!</h2>
+      <h2 class="hero__h2">Soo Cute!</h2>
       <figure>
         <img
-          src="../img/tacos_and_drink_1000x667.png"
-          alt="Tacos and a Drink"
-          title="Tacos and Drink"
+          src="../img/kitten_starring_up-4611189__340.png"
+          alt="Kitten Staring Up"
+          title="Kitten Staring Up"
           width="1000"
           height="667"
         />
-        <figcaption class="offscreen">Try there Delicious Tacos</figcaption>
+        <figcaption class="offscreen">Kitten Staring Up</figcaption>
       </figure>
     </section>
 
     <main class="main">
       <article id="menu" class="main__article menu">
-        <h2 class="menu__h2">Our Menu</h2>
+        <h2 class="menu__h2">Our Prices</h2>
         <table class="menu__container">
           <caption class="offscreen">
-            Our Tacos
+            Our Kittens
           </caption>
           <thead>
             <tr>
-              <th class="menu__header" scope="col">Tacos</th>
-              <th class="menu__header" scope="col">Quantity</th>
+              <th class="menu__header" scope="col">Kittens</th>
+              <th class="menu__header" scope="col">Cuteness</th>
               <th class="menu__header" scope="col">Price</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th class="menu__item menu_cr" scope="row" rowspan="3">
-                Crunchy
+              <th class="menu__item menu__cr" scope="row" rowspan="3">
+                Adorable
               </th>
               <td class="menu__item">1</td>
-              <td class="menu__item">$1.50</td>
+              <td class="menu__item">😺150</td>
             </tr>
             <tr>
               <td class="menu__item">2</td>
-              <td class="menu__item">$2.50</td>
+              <td class="menu__item">😺250</td>
             </tr>
             <tr>
               <td class="menu__item">3</td>
-              <td class="menu__item">$4.50</td>
+              <td class="menu__item">😺450</td>
             </tr>
             <tr>
-              <th class="menu__item menu__sf" scope="row" rowspan="3">Soft</th>
+              <th class="menu__item menu__sf" scope="row" rowspan="3">Funny</th>
               <td class="menu__item">1</td>
-              <td class="menu__item">$2.00</td>
+              <td class="menu__item">😺200</td>
             </tr>
             <tr>
               <td class="menu__item">2</td>
-              <td class="menu__item">$2.50</td>
+              <td class="menu__item">😺250</td>
             </tr>
             <tr>
               <td class="menu__item">3</td>
-              <td class="menu__item">$4.50</td>
+              <td class="menu__item">😺450</td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
-              <td class="menu__item menu__cs" colspan="3">Chips & Salsa $2</td>
+              <td class="menu__item menu__cs" colspan="3">
+                Little Cat Picture $2 (Random)
+              </td>
             </tr>
           </tfoot>
         </table>
@@ -102,8 +105,8 @@
 
     <footer class="footer">
       <p>
-        <span class="nowrap">Copyright &copy;</span>
-        <span class="nowrap">Little Taco Shop</span>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">Kitten Cuteness</span>
       </p>
     </footer>
   </body>
